@@ -12,6 +12,12 @@ public class UserDefinedExceptionExample {
 
     public static void main(String[] args) {
         UserDefinedExceptionExample u = new UserDefinedExceptionExample();
-        u.display(17);
+        try {
+            u.display(17);
+        }
+        catch(Exception e)
+        {
+            System.out.println(e.getMessage());
+        }
     }
 }
